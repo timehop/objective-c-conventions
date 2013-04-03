@@ -3,8 +3,9 @@ Unless explicitly contradicted below, assume that all of Apple's guidelines appl
 
 ## Whitespace
 
- * Tabs, not spaces.
+ * Spaces, not tabs.
  * End files with a newline.
+ * No trailing whitespace
  * Make liberal use of vertical whitespace to divide code into logical chunks.
 
 ## Documentation and Organization
