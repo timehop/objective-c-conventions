@@ -102,19 +102,32 @@ NewType a = (NewType)b;
 
 ## Control Structures
 
- * Always surround `if` bodies with curly braces if there is an `else`. Single-line `if` bodies without an `else` should be on the same line as the `if`. 
+ * Always surround `if` bodies with curly braces. Period.
  * All curly braces should begin on the same line as their associated statement. They should end on a new line.
  * Put a single space after keywords and before their parentheses.
  * Return and break early.
  * No spaces between parentheses and their contents.
 
 ```objc
-if (shitIsBad) return;
+if (shitIsBad) {
+	return;
+}
 
 if (something == nil) {
 	// do stuff
 } else {
 	// do other stuff
+}
+```
+ * If the execution of an entire block is conditional upon some expression, just return if the conditional fails.
+ 
+```objc
+- (void)doShitUnlessShitIsBad:(BOOL)shitIsBad {
+	if (shitIsBad) {
+		return;
+	}
+
+	// do shit
 }
 ```
 
